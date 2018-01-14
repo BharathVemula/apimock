@@ -1,6 +1,6 @@
 #test-setup
 
-This repo contains a broken server setup you are expected to fix. The server then needs to give the correct responses to the below questions. 
+This repo contains a broken server setup you are expected to fix. The server then needs to give the correct responses to the below questions.
 
 To run the server, invoke
 ```
@@ -20,33 +20,33 @@ Steps to perform:
 
 4. Create an api endpoint in `src/api/prodapis/handlers.js` called `/csv2json` which accepts a csv file as an input and then sends a json object as response.
 	For eg:
-		
+
         Payload:
 		| Name    | Age  | Sex  |
 		| :---:   | :-:  | :-: |
 		| Harish  | 10   | M 	|
 		| Suresh  | 20   | M 	|
 		| Chanda  | 30   | F 	|
-	
-    	Response: 
+
+    	Response:
         [
-        	{	
+        	{
         		"name"	: "Harish",
         		"age"	: "10",
         		"sex"	: "M"
-        
+
         	},
-        	{	
+        	{
         		"name"	: "Suresh",
         		"age"	: "20",
         		"sex"	: "M"
-        
+
         	},
-        	{	
+        	{
         		"name"	: "Chanda",
         		"age"	: "30",
         		"sex"	: "F"
-        
+
         	}
         ]
 
@@ -54,8 +54,8 @@ Steps to perform:
 
 We are currently passing an array `[1,2,3,4,5,6,7,8,9,10]` to the function adder. Calling this api will currently give you:
 
-`Response = 0` 
-and on the console : 
+`Response = 0`
+and on the console :
 ```
 Trying to add 1
 Trying to add 2
