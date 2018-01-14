@@ -50,15 +50,15 @@ export let csv2JsonConverter =  async (request, h) => {
 			const Converter = csvtojson.Converter;
 			const cnvrtrObj = new Converter({});
 
-			const json = await cnvrtrObj.fromFile(csv._readableState.pipes.path, (err,result) => {
+			return cnvrtrObj.fromFile(csv._readableState.pipes.path, (err,result) => {
 					 if(err){
 							 console.error("Error converting the CSV to JSON: ");
 							 console.error(err);
 					 }
-					 dataJson = result;
+					 return result;
 			 });
-			 console.error(json);
-			 return json;
+			//  console.error(json);
+			//  return json;
 	} else {
 		return  'Try uploading a proper file';
 	}

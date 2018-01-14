@@ -8,7 +8,7 @@ let routes = [
   },
  {
    method: 'POST',
-   path: '/tempPostReq',
+   path: '/csv2json',
    config: {
 
      payload: {
